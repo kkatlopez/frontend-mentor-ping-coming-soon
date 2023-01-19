@@ -1,38 +1,117 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+:root {
+    /* Primary */
+    --blue: hsl(223, 87%, 63%);
+    /* Secondary */
+    --pale-blue: hsl(223, 100%, 88%);
+    --red: hsl(354, 100%, 66%);
+    /* Neutral */
+    --gray: hsl(0, 0%, 59%);
+    --dark-blue: hsl(209, 33%, 12%);
+    /* Other */
+    --black: #000;
+    --white: #fff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    overflow-x: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+*, body {
+    font-family: "Libre Franklin", "Arial", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.container-fluid {
+    min-height: 100%;
+    min-height: 100vh;
+    align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+#logo {
+    max-width: 100px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn.btn-primary {
+    background-color: var(--blue);
+    font-weight: 700;
+    box-shadow: 2px 2px 10px var(--pale-blue);
+}
+
+#header, #header > span {
+    font-size: 1.35rem;
+    text-align: center;
+}
+
+#header {
+    padding-top: 2.5rem;
+    color: var(--gray);
+}
+
+#header > span {
+    color: var(--black);
+    font-weight: 700;
+}
+
+#subheader {
+    text-align: center;
+    font-size: 16px;
+    padding: 0.75rem 0;
+}
+
+#email, #img-container {
+    padding: 0 2rem;
+}
+
+input.form-control, .btn.btn-primary {
+    border-radius: 50px;
+    font-size: 16px;
+    padding: 0.7rem;
+}
+
+input.form-control {
+    border-color: var(--pale-blue);
+    padding-left: 1.5rem;
+}
+
+input.form-control::placeholder {
+    color: var(--pale-blue);
+}
+
+#email .error-text {
+    color: var(--red);
+    font-size: 14px;
+    font-style: italic;
+}
+
+#email .error-input {
+    border: 1px solid var(--red);
+}
+
+#illustration.img-responsive {
+    max-width: 625px;
+}
+
+#footer .social {
+    color: var(--blue);
+    display: inline-block;
+    border-radius: 50px;
+    box-shadow: 0 0 2px var(--pale-blue);
+    padding: 0.5rem 0.375rem;
+    margin: 0.75rem;
+    transition: 0.2s;
+}
+
+#footer .social:hover {
+    color: var(--white);
+    background-color: var(--blue);
+    cursor: pointer;
+}
+
+#footer p {
+    text-align: center;
+    color: var(--gray);
+    font-size: 12px;
 }
