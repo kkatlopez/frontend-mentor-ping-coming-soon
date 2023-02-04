@@ -39,7 +39,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub](https://github.com/kkatlopez/frontend-mentor-ping-coming-soon)
-- Live Site URL: [Vercel](https://your-live-site-url.com)
+- Live Site URL: [Vercel](https://frontend-mentor-ping-coming-soon-kl.vercel.app/)
 
 ## My process
 
